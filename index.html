@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            line-height: 1.5;
+            /* font-family: 'Times New Roman', Times, serif; */
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family:sans-serif;
+            color: aliceblue;
+        }
+
+        .container {
+            max-width: 110px;
+            /* background-color: red; */
+            margin: auto;
+        }
+        ul {
+            list-style: none;
+            line-height: 20px;
+        }
+
+        .footer {
+            background-color:rgb(26, 20, 22);
+            padding: 70px 0;
+        }
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+        }
+        .footer-col h4{
+            font-size: 18px;
+            color: blueviolet;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            font-weight: 500;
+            position: relative;
+            background-color: red;
+        }
+        .footer-col h4::before{
+            position: absolute;
+            bottom: -10px;
+            background-color: blueviolet;
+            height: 2px;
+            box-sizing:border-box;
+            width: 50px;
+        }
+        .footer-col ul li a:hover{
+            color: rgb(214, 204, 223);
+            padding-left: 10px;
+        }
+        .row{
+            display: flex;
+            padding: 20px;
+            justify-content: space-between;
+        }
+        .images{
+            padding: 10px;
+            justify-content: space-between;
+        }
+        .section{
+            background-color: black;
+        }
+        .section h1{
+            text-align: center;
+        }
+        .section p{
+            text-align: center;
+        }
+        .tabel{
+            height: 30px;
+            width: 500px;
+            border-radius: 10px;
+        }
+        .check{
+            margin: 20px;
+        }
+        .button{
+            color: black;
+            position: absolute;
+            left: 400px;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+        }
+        .mail{
+            margin-left: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="section">
+            <h1>NEWSELETTER</h1>
+            <p>Sign up to receive updates on new <br> products and special offers</p>
+
+            <label class="mail">Email *</label> <br>
+            <input class="tabel mail" type="mail" name="mail" placeholder="Enter Your Mail"> <br> <br>
+            <input class="button" type="button" value="Sbmit">
+            <input class="check" type="checkbox" name="check" ><label>Yes,Subscribe me to your newsletter.</label>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="continer">
+            <div class="row">
+                <div class="footer-cool">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policya</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-cool">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order status</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-cool">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Consotes</a></li>
+                        <li><a href="#">Controllers</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-cool">
+                    <h4>Follow Us</h4>
+                    <div class="sociallinks">
+                        <ul>
+                            <a href="https://x.com/i/flow/login"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin"></i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr> <br>
+        <h3>Payment Mode</h3> <br>
+        <div class="images">
+            <img src="debit.jpeg" alt="images" height="50" width="70">
+            <img src="visa.png" alt="images" height="50" width="70">
+            <img src="upi.jpeg" alt="images" height="50" width="70">
+            <img src="cash.png" alt="images" height="50" width="70">
+        </div>
+    </footer>
+</body>
+
+</html>
